@@ -1,0 +1,124 @@
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "latin(type2)"
+
+    name[Group1]= "Faroese";
+
+    key <TLDE>	{ [   onehalf,   section, threequarters,    paragraph ]	};
+    key <LSGT>	{ [      less,    greater,    backslash,      notsign ]	};
+    key <SPCE>	{ [     space,      space, nobreakspace, nobreakspace ] };
+
+    key <AE05>	{ [         5,    percent,     NoSymbol,         cent ] };
+    key <AE06>	{ [         6,  ampersand,          yen,     NoSymbol ] };
+    key <AE11>	{ [      plus,   question,    plusminus, questiondown ] };
+    key <AE12>	{ [dead_acute, dead_grave,          bar,    brokenbar ] };
+
+    key <AB03>	{ [         c,          C,    copyright,     NoSymbol ] };
+    key <AB10>	{ [     minus, underscore,       hyphen,       macron ] };
+
+    key <AC03>	{ [         d,          D,          eth,          ETH ] };
+    key	<AC10>	{ [        ae,	       AE	] };
+    key <AC11>	{ [    oslash,   Ooblique 	] };
+
+    key <AD08>	{ [         i,          I       ] };
+    key <AD11>	{ [     aring,      Aring, dead_diaeresis, dead_circumflex ] };
+    key <AD12>	{ [       eth,        ETH,   dead_tilde,   dead_caron ] };
+
+    key <BKSL>	{ [apostrophe,   asterisk, dead_doubleacute, multiply ]	};
+
+    include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "nodeadkeys" {
+
+    include "fo(basic)"
+
+    name[Group1]= "Faroese (eliminate dead keys)";
+
+    key <AE12>	{ [     acute,      grave,          bar,       ogonek ]	};
+    key <AD11>	{ [     aring,      Aring,    diaeresis,       degree ]	};
+    key <AD12>	{ [ diaeresis, asciicircum,  asciitilde,       macron ]	};
+    key <AC10>	{ [        ae,         AE,        acute,  doubleacute ]	};
+    key <AC11>	{ [    oslash,   Ooblique,  asciicircum,        caron ]	};
+    key <BKSL>	{ [apostrophe,   asterisk,  doubleacute,     multiply ]	};
+    key <AB08>	{ [     comma,  semicolon,      cedilla,       ogonek ]	};
+    key <AB09>	{ [    period,      colon, periodcentered,   abovedot ]	};
+};
+
+// dvorak-of-the-north Dvorak, by branduren@gmail.com
+partial alphanumeric_keys
+xkb_symbols "dvorak-of-the-north" {
+    name[Group1] = "Faroese (Dvorak of the north)";
+
+    //         { [ nmodified		Shift		AltGr		Shift+AltGr
+    // nr.... type[Group1] = "FOUR_LEVEL_ALPHABETIC"
+
+    key <TLDE> { [ dollar,          asciitilde,     dead_tilde                  ] };
+
+    key <AE01> { [ exclam	, 1						] };
+    key <AE02> { [ at		, 2	,currency				] };
+    key <AE03> { [ numbersign	, 3	,cent					] };
+    key <AE04> { [ dollar	, 4	,yen					] };
+    key <AE05> { [ percent	, 5	,EuroSign				] };
+    key <AE06> { [ ampersand	, 6	,sterling				] };
+    key <AE07> { [ asterisk	, 7						] };
+    key <AE08> { [ asciicircum	, 8	,onehalf				] };
+    key <AE09> { [ plus	, 9						] };
+    key <AE10> { [ equal	, 0	,dead_circumflex			] };
+    key <AE11> { [ exclam	, exclamdown					] };
+    key <AE12> { [ dead_acute	, dead_grave		,bar	,brokenbar	] };
+
+    // upper row, left side
+    key <AD01> { [ slash,		question,	dead_diaeresis			] };
+    key <AD02> { [ comma,		semicolon,	guillemotleft			] };
+    key <AD03> { [ period,		colon,		guillemotright			] };
+    key <AD04> { [ p,			P,		paragraph,	section	] };
+    key <AD05> { [ y,			Y,		udiaeresis,	Udiaeresis	] };
+    key <AD06> { [ f,			F						] };
+    key <AD07> { [ g,			G						] };
+    key <AD08> { [ c,			C,		ccedilla,	Ccedilla	] };
+    key <AD09> { [ r,			R,		registered,	trademark	] };
+    key <AD10> { [ l,			L						] };
+    key <AD11> { [ parenleft,		braceleft,	bracketleft			] };
+    key <AD12> { [ parenright,		braceright,	bracketright,	dead_caron	] };
+
+    // home row, left side
+    key <AC01> { [ a,			A,		aring,		Aring		] };
+    key <AC02> { [ o,			O,		oslash,	Ooblique	] };
+    key <AC03> { [ e,			E,		ae,		AE		] };
+    key <AC04> { [ u,			U,		eacute,	Eacute		] };
+    key <AC05> { [ i,			I						] };
+    key <AC06> { [ d,			D,		eth,		ETH		] };
+    key <AC07> { [ h,			H,		dead_acute			] };
+    key <AC08> { [ t,			T,		thorn,		THORN		] };
+    key <AC09> { [ n,			N,		ntilde,	Ntilde		] };
+    key <AC10> { [ s,			S,		ssharp				] };
+    key <AC11> { [ minus,		underscore,	hyphen				] };
+
+    // lower row
+    key <AB01> { [ apostrophe,		quotedbl,	dead_acute			] };
+    key <AB02> { [ q,			Q						] };
+    key <AB03> { [ j,			J						] };
+    key <AB04> { [ k,			K						] };
+    key <AB05> { [ x,			X						] };
+    key <AB06> { [ b,			B						] };
+    key <AB07> { [ m,			M						] };
+    key <AB08> { [ w,			W						] };
+    key <AB09> { [ v,			V						] };
+    key <AB10> { [ z,			Z						] };
+
+    key <BKSP> { [ BackSpace,		BackSpace,	BackSpace,	BackSpace	] };
+    key <SPCE> { [ space,		space,		nobreakspace,	nobreakspace	] };
+
+    replace key <CAPS> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Caps_Lock ],
+        actions[Group1] = [ SetMods(modifiers=Control) ]
+    };
+    modifier_map Control { <CAPS> };
+
+    include "level3(ralt_switch)"
+
+};
