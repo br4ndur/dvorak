@@ -57,18 +57,18 @@ xkb_symbols "dvorak-of-the-north" {
 
     key <TLDE> { [ dollar,          asciitilde,     dead_tilde                  ] };
 
-    key <AE01> { [ exclam	, 1						] };
-    key <AE02> { [ at		, 2	,currency				] };
-    key <AE03> { [ numbersign	, 3	,cent					] };
-    key <AE04> { [ dollar	, 4	,yen					] };
-    key <AE05> { [ percent	, 5	,EuroSign				] };
-    key <AE06> { [ ampersand	, 6	,sterling				] };
-    key <AE07> { [ asterisk	, 7						] };
-    key <AE08> { [ asciicircum	, 8	,onehalf				] };
-    key <AE09> { [ plus	, 9						] };
-    key <AE10> { [ equal	, 0	,dead_circumflex			] };
-    key <AE11> { [ exclam	, exclamdown					] };
-    key <AE12> { [ dead_acute	, dead_grave		,bar	,brokenbar	] };
+    key <AE01> { [ 1,	exclam						] };
+    key <AE02> { [ 2,	at,		currency				] };
+    key <AE03> { [ 3,	numbersign,	cent					] };
+    key <AE04> { [ 4,	dollar,	yen					] };
+    key <AE05> { [ 5,	percent,	EuroSign				] };
+    key <AE06> { [ 6,	ampersand,	sterling				] };
+    key <AE07> { [ 7,	asterisk 						] };
+    key <AE08> { [ 8,	asciicircum,	onehalf				] };
+    key <AE09> { [ 9,	plus		 					] };
+    key <AE10> { [ 0,	equal,	dead_circumflex			] };
+    key <AE11> { [ exclam,		exclamdown					] };
+    key <AE12> { [ dead_acute,	dead_grave,		bar,	brokenbar	] };
 
     // upper row, left side
     key <AD01> { [ slash,		question,	dead_diaeresis			] };
