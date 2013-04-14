@@ -74,7 +74,7 @@ xkb_symbols "dvorak-fo" {
     key <AD01> { [ slash,		question,	dead_diaeresis			] };
     key <AD02> { [ comma,		semicolon,	guillemotleft			] };
     key <AD03> { [ period,		colon,		guillemotright			] };
-    key <AD04> { [ p,			P,		paragraph,	section	] };
+    key <AD04> { [ p,			P,		thorn,		THORN		] };
     key <AD05> { [ y,			Y,		udiaeresis,	Udiaeresis	] };
     key <AD06> { [ f,			F						] };
     key <AD07> { [ g,			G						] };
@@ -91,8 +91,8 @@ xkb_symbols "dvorak-fo" {
     key <AC04> { [ u,			U,		eacute,	Eacute		] };
     key <AC05> { [ i,			I						] };
     key <AC06> { [ d,			D,		eth,		ETH		] };
-    key <AC07> { [ h,			H,		dead_acute			] };
-    key <AC08> { [ t,			T,		thorn,		THORN		] };
+    key <AC07> { [ h,			H,		dead_acute,	dead_grave	] };
+    key <AC08> { [ t,			T,		dead_circumflex		] };
     key <AC09> { [ n,			N,		ntilde,	Ntilde		] };
     key <AC10> { [ s,			S,		ssharp				] };
     key <AC11> { [ minus,		underscore,	hyphen				] };
