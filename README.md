@@ -12,7 +12,7 @@ files base.xml, evdev.xml(/usr/share/X11/xkb/rules)
           </configItem>
         </variant>
 ---
-in etc/default/keyboard
+in /etc/default/keyboard
 XKBLAYOUT="fo"
 XKBVARIANT="dvorak-fo"
 ---
